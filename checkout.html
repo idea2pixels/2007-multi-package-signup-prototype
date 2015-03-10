@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Autotrader.com : Self Service : Checkout</title>
+
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous/scriptaculous.js?load=effects,easing"></script>
+<script type="text/javascript" src="js/toycart.js"></script>
+<script type="text/javascript" src="js/checkout.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="contentpage">
+
+	<div id="header">
+		<img src="img/logo.gif" alt="Autotrader.com for Dealers" width="177" height="51" />	
+	</div>
+	
+	<h1 class="tabbed">Checkout</h1>
+	<div id="packageselection" class="clearfix">	
+		<div id="progressbar">
+			<div id="progress" class="step4"></div>
+		</div>
+		
+		<div id="packagelist">
+			<div id="checkout">
+				
+				<h2><div id="corner"></div>New Account</h2>
+				
+				<form name="checkoutform" id="checkoutform" action="#">
+			<fieldset>				
+				<h3>HomeNet Inventory Source&mdash;powered by AutoTrader.com</h3>
+				<p>To maximize your vehicles on AutoTrader.com, we use HomeNet Inventory manager to make sure your inventory is always working for you!</p>
+				<p>Please login to connect your vehicles to AutoTrader.com</p>
+				
+				<div class="clearfix">
+					<label for="homenet_login">Login</label>
+					<input type="text" id="homenet_login" name="homenet_login" />
+				</div>
+				
+				<div class="clearfix tall">
+					<label for="homenet_password">Password</label>
+					<input type="password" id="homenet_password" name="homenet_password" />
+					<button class="connect" type="button">Connect</button>
+				</div>
+				
+				<p>Don't have a HomeNet Account? Sign up for a basic account to get started!</p>
+				
+				<div class="clearfix">
+					<label for="homenet_name">Name</label>
+					<input type="text" name="homenet_name" id="homenet_name" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_dealer">Dealer/Comp</label>
+					<input type="text" name="homenet_dealer" id="homenet_dealer" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_address">Address</label>
+					<input type="text" name="homenet_address" id="homenet_address" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_city">City</label>
+					<input type="text" name="homenet_city" id="homenet_city" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_state">State</label>
+					<input type="text" name="homenet_state" id="homenet_state" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_zip">ZIP Code</label>
+					<input type="text" name="homenet_zip" id="homenet_zip" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_phone">Phone</label>
+					<input type="text" name="homenet_phone" id="homenet_phone" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_email">Email</label>
+					<input type="text" name="homenet_email" id="homenet_email" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="homenet_web">Website</label>
+					<input type="text" name="homenet_web" id="homenet_web" />
+					<button class="signup" type="button">Sign-Up</button>
+				</div>	
+			</fieldset>
+			
+			<fieldset>
+				<h3>Dealership Information</h3>
+				
+				<div class="clearfix">
+					<label for="dealer_name">Dealership Name</label>
+					<input class="serialize" type="text" name="dealer_name" id="dealer_name" value="Super Sample Dealer" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_address">Street Address</label>
+					<input class="serialize" type="text" name="dealer_address" id="dealer_address" value="1000 Atlanta Road" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_address2">Street Address 2</label>
+					<input class="serialize" type="text" name="dealer_address2" id="dealer_address2" value="Suite 300" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_city">City</label>
+					<input class="serialize" type="text" name="dealer_city" id="dealer_city" value="Atlanta" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_state">State</label>
+					<input class="serialize" type="text" name="dealer_state" id="dealer_state" value="GA" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_zip">ZIP Code</label>
+					<input class="serialize" type="text" name="dealer_zip" id="dealer_zip" value="30333" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact_name">Primary Contact Name</label>
+					<input class="serialize" type="text" name="dealer_contact_name" id="dealer_contact_name" value="Michael Bolton" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact_title">Primary Contact Title</label>
+					<input class="serialize" type="text" name="dealer_contact_title" id="dealer_contact_title" value="Catalog Master" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact_email">Email</label>
+					<input class="serialize" type="text" name="dealer_contact_email" id="dealer_contact_email" value="mbolton@whenamanlovesawoman.com" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact_phone">Phone</label>
+					<input class="serialize" type="text" name="dealer_contact_phone" id="dealer_contact_phone" value="404.865.5309" />
+				</div>
+				
+				<div class="clearfix tall">
+					<label for="dealer_contact_fax">Fax</label>
+					<input class="serialize" type="text" name="dealer_contact_fax" id="dealer_contact_fax" value="404.123.4567" />
+				</div>
+				
+				<h3>Contacts for Listings</h3>
+				<p>Add a contact for your used cars online.</p>
+				
+				<div class="clearfix">
+					<label for="dealer_contact2_name">Name</label>
+					<input class="serialize" type="text" name="dealer_contact2_name" id="dealer_contact2_name" value="Peter Gibbons" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact2_title">Title</label>
+					<input class="serialize" type="text" name="dealer_contact2_title" id="dealer_contact2_title" value="Manager of 4" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact2_email">Email</label>
+					<input class="serialize" type="text" name="dealer_contact2_email" id="dealer_contact2_email" value="pgibbons@initech.com" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="dealer_contact2_phone">Phone</label>
+					<input class="serialize" type="text" name="dealer_contact2_phone" id="dealer_contact2_phone" value="800-588-2300" />
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h3>Promotional Code</h3>
+				<div class="clearfix">
+					<input type="text" name="promo_code" id="promo_code" />
+					<button class="apply" type="button">Apply</button>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h3>First Payment Charges</h3>
+				<p>Please select your first time payment method: Your total first time purchase is $1864.00. This total includes your total monthly cost as well as any one time setup costs.</p>
+				
+				<div class="clearfix">
+					<label for="first_cc_type">Select Card Type</label>
+					<select name="first_cc_type" id="first_cc_type">
+						<option value=""></option>
+						<option value="visa">Visa</option>
+						<option value="mc">MasterCard</option>
+						<option value="amex">American Express</option>
+					</select>
+				</div>
+				
+				<div class="clearfix">
+					<label for="first_cc_number">Credit Card Number</label>
+					<input type="text" name="first_cc_number" id="first_cc_number" />
+				</div>
+				
+				<div class="clearfix">
+					<label for="first_cc_exp_month">Expiration Date</label>
+					<select name="first_cc_exp_month" id="first_cc_exp_month">
+						<option value=""></option>
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>
+					
+					<select name="first_cc_exp_year" id="first_cc_exp_year">
+						<option value=""></option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+					</select>
+				</div>
+				
+				<div class="clearfix">
+					<label for="first_cc_exp_code">Security Code</label>
+					<input type="text" name="first_cc_exp_code" id="first_cc_exp_code" />
+				</div>
+				<div class="clearfix" style="margin-left: 150px;">
+					<img src="img/cards.gif" alt="Accept: Visa, Mastercard, American Express, Paypal" width="173" height="27" />					
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h3>Recurring Monthly Charges</h3>
+				<p>Your total monthly billing will be $1599.00. If you would like to select a different payment method for recurring monthly charges, please select from the following billing/payment methods.</p>
+				
+				<div class="clearfix">
+					<input class="box" type="radio" name="same_card" id="same_card_yes" value="true" />
+					<label class="box" for="same_card_yes">Use Credit Card entered for initial purchase.</label>
+				</div>
+				
+				<div class="clearfix">
+					<input class="box" type="radio" name="same_card" id="same_card_no" value="false" />
+					<label class="box" for="same_card_no">Set up monthly charges with a different card.</label>
+				</div>
+				
+				<div id="second_card">
+					<div class="clearfix">
+						<label for="second_cc_type">Select Card Type</label>
+						<select name="second_cc_type" id="second_cc_type">
+							<option value=""></option>
+							<option value="visa">Visa</option>
+							<option value="mc">MasterCard</option>
+							<option value="amex">American Express</option>
+						</select>
+					</div>
+					
+					<div class="clearfix">
+						<label for="second_cc_number">Credit Card Number</label>
+						<input type="text" name="second_cc_number" id="second_cc_number" />
+					</div>
+					
+					<div class="clearfix">
+						<label for="second_cc_exp_month">Expiration Date</label>
+						<select name="second_cc_exp_month" id="second_cc_exp_month">
+							<option value=""></option>
+							<option value="01">January</option>
+							<option value="02">February</option>
+							<option value="03">March</option>
+							<option value="04">April</option>
+							<option value="05">May</option>
+							<option value="06">June</option>
+							<option value="07">July</option>
+							<option value="08">August</option>
+							<option value="09">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
+						
+						<select name="second_cc_exp_year" id="second_cc_exp_year">
+							<option value=""></option>
+							<option value="2009">2009</option>
+							<option value="2010">2010</option>
+							<option value="2011">2011</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+						</select>
+					</div>
+					
+					<div class="clearfix">
+						<label cla for="second_cc_exp_code">Security Code</label>
+						<input type="text" name="second_cc_exp_code" id="second_cc_exp_code" />
+					</div>				
+				
+					<div class="clearfix tall" style="margin-left: 150px;">
+						<img src="img/cards.gif" alt="Accept: Visa, Mastercard, American Express, Paypal" width="173" height="27" />					
+					</div>
+				
+				</div>
+				
+				<div class="clearfix">
+					<input class="box" type="checkbox" id="billmelater" name="billmelater" />
+					<label class="box" for="billmelater">Bill me later. <a href="#">Edit Billing Information</a></label>
+				</div>
+				
+			</fieldset>	
+			
+			<div id="continue" class="button_checkout"></div>
+			</form>
+				
+			</div>
+			
+			<p class="security">Our customers have the confidence to make their purchases online with VeriSign® Secure Site with EV SSL Certificates. </p>
+			<p style="margin-top: 10px;"><img src="img/verisign.gif" alt="Payment Services by Verisign" width="94" height="39" /></p>
+			
+		</div>
+		
+		<div id="cart">
+			<div id="cartcap"></div>
+			<h3>Your Order:</h3>
+			<h4>Monthly Bill</h4>
+			<ul id="monthlyitems">
+				<li class="total"><span>Your monthly recurring total:</span> $0</li>
+			</ul>
+			
+			<h4>One-Time Costs</h4>
+			<ul id="onetime">
+				<li class="total"><span>Total One-Time Costs:</span> #0</li>
+			</ul>
+			
+			<h4>First Payment Total</h4>
+			<ul id="summary" class="total">
+				<li class="nofloat">Summary of Packages </li>
+				<li class="nofloat">* Including Setup Costs </li>
+				<li id="bill" class="bill">Total: $0</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<p class="feedback"><a href="#">Feedback</a></p>
+		<p>&copy; 2008 AutoTrader.com, Inc.  All Rights Reserved. “AutoTrader.com” is a registered trademark of TPI Holdings, Inc. used under exclusive license.</p>
+		<p>By using this service, you accept the terms of our  <a href="#">Visitor Agreement</a> | <a href="#">Privacy Statement</a> | <a href="#">AutoTrader.com</a></p>
+		<p class="sitelinks"><a href="#">Dashboard</a> | <a href="#">Vehicles</a> | <a href="#">Prospects</a> | <a href="#">Advertising Products</a> | <a href="#">Multimedia</a> | <a href="#">Reporting</a>	
+	</div>
+	
+</div>				
+
+</body>	
+
